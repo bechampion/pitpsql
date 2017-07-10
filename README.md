@@ -5,6 +5,17 @@ mkdir backups
 mkdir archives
 ```
 
+init the db as
+```
+initdb data
+```
+
+and copy in all the conf files BUT recovery conf and
+
+
+``` pg_ctl start -D data/```
+
+
 wals are copied from pg_xlogs to /archives every rotation every 16MB
 
 To create the first backup do 
